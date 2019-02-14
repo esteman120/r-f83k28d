@@ -18,7 +18,11 @@ class App extends Component {
         <button id="inc" onClick={this.contador.bind(this)}>Incrementa</button>
       </div>
     );
-  }   let suma = num + 1;
+  }
+
+  contador(){
+    let num = this.state.numero;
+    let suma = num + 1;
     this.setState({
       numero: suma
     });
